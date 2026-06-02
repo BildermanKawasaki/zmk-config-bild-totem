@@ -94,7 +94,7 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 // Tap: repeat after alpha, else sticky-shift |
 // Shift + tap/ double-tap: caps-word | Hold: shift.
-#define MAGIC_SHIFT &magic_shift &mo FN 0
+#define MAGIC_SHIFT &magic_shift LSHFT 0
 ZMK_HOLD_TAP(magic_shift, bindings = <&kp>, <&magic_shift_tap>;
              flavor = "balanced"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
