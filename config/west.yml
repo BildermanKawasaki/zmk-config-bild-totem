@@ -1,6 +1,6 @@
 manifest:
   defaults:
-    revision: main
+    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -11,11 +11,11 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
       import: app/west.yml
 
       # device and drivenr modules
     - name: zmk-keyboard-totem
+      revision: main
       remote: BildermanKawasaki 
 
       # urob modules
@@ -39,4 +39,3 @@ manifest:
       path: modules/zmk/unicode
   self:
     path: config
-  
